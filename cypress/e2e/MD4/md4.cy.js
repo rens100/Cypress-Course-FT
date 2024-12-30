@@ -1,6 +1,3 @@
-// wyszukiwanie w devtoolsach: tagname[wartość z atrybutem]
-// #id, .class,
-
 
 describe('MD4 + znajdź 5 elementów po: ', () => {
 
