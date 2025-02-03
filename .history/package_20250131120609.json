@@ -17,6 +17,7 @@
   "homepage": "https://github.com/rens100/Cypress-Course-FT#readme",
   "description": "",
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "cypress": "^13.17.0"
   }
 }
