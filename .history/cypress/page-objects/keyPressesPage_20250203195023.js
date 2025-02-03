@@ -26,7 +26,7 @@ class KeypressesPage {
     cy.get(input).type(randomKeys);
     cy.get(result).should("have.text", `You entered: ${randomKeys}`);
       }
-      // np dla alta czy taba : Timed out retrying after 4000ms: expected '<p#keyPressResult>' to have text 'You entered: {alt}', but the text was 'You entered: ALT'
+      // np dla alta czy  : Timed out retrying after 4000ms: expected '<p#keyPressResult>' to have text 'You entered: {alt}', but the text was 'You entered: ALT'
       //ale dla entera juz dziala poprawnie. 
 
 }
