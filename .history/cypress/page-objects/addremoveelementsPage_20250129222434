@@ -1,0 +1,19 @@
+const addElement = 'button[onclick="addElement()"]';
+const deleteElement = ".added-manually";
+
+class AddAndRemovePage {
+  addElement() {
+    cy.get(addElement).click();
+    cy.get(deleteElement).should('be.visible');
+  }
+  deleteOneElement() {
+    cy.get(deleteElement).click();
+    cy.get(deleteElement).should('not.exist');
+  }
+  addMoreElements() {
+    cy.get(addElement).click();
+    cy.get(deleteElement).should('be.visible');
+  }
+}
+
+export default AddAndRemovePage;

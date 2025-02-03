@@ -1,0 +1,1 @@
+const checkbox = 'input[type="checkbox"'

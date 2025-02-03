@@ -1,0 +1,1 @@
+const datepicker = 'datepicker[type="date"'

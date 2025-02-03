@@ -1,0 +1,26 @@
+const addElement = 'button[onclick="addElement()"]';
+const deleteElement = ".added-manually";
+
+class AddAndRemovePage {
+  addElementAndDelete() {
+    cy.get(addElement).click();
+    cy.get(deleteElement).should('be.visible');
+    cy.get(deleteElement).click();
+    cy.get(deleteElement).should('not.exist');
+  }
+  addMoreElementsAndDeleteThem() {
+    Cypress._.times(3, () => {
+        cy.get(addElement).click();  // Kliknij 3 razy
+      });
+    cy.get(deleteElement).should('have.length', '3');
+    addMoreElementsAndDeleteThem() {
+        Cypress._.times(3, () => {
+            cy.get(deleteElement).click();  // Kliknij 3 razy
+          });
+
+    // cy.get(addElement).click();
+    // cy.get(deleteElement).should('be.visible');
+  }
+}
+
+export default AddAndRemovePage;

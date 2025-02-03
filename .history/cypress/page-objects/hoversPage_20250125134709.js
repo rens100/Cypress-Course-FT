@@ -1,0 +1,1 @@
+const hoversWindow = #hovers-content;

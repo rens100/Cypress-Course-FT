@@ -1,0 +1,10 @@
+const addElement = 'button[onclick="addElement()"]';
+const deleteElement = '.added-manually'
+
+class AddElement() {
+
+    addElement() {
+        cy.get(addElement).click();
+
+    }
+}

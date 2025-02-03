@@ -1,0 +1,1 @@
+const input =  'input[type="number"]'
