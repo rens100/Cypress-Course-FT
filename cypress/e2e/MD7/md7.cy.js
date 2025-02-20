@@ -16,11 +16,12 @@ describe("should automate the websites", function () {
   beforeEach(() => {
     cy.clearLocalStorage();
     cy.visit("https://simpletestsite.fabrykatestow.pl/");
+    const homePage = new HomePage();
+    homePage.visitPage();
   });
 
     it("test checkboxTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickCheckboxTab();
 
       const checkboxPage = new CheckboxPage();
@@ -30,7 +31,6 @@ describe("should automate the websites", function () {
 
     it("test datepickerTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickDatepickerTab();
 
       const datePickerPage = new DatePickerPage();
@@ -39,7 +39,6 @@ describe("should automate the websites", function () {
 
     it("test inputTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickInputsTab();
 
       const inputPage = new InputPage();
@@ -49,7 +48,6 @@ describe("should automate the websites", function () {
 
     it("test hoversTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickHoversTab();
 
       const hoversPage = new HoversPage();
@@ -58,7 +56,6 @@ describe("should automate the websites", function () {
 
     it("test basisAuthTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickBasicauthTab();
 
       const basisauthPage = new BasisauthPage();
@@ -68,7 +65,6 @@ describe("should automate the websites", function () {
 
     it("test formTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickFormTab();
 
       const formPage = new FormPage();
@@ -78,7 +74,6 @@ describe("should automate the websites", function () {
 
     it("test dropDownTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickDropdownListTab();
 
       const dropdownListPage = new DropdownListPage();
@@ -87,7 +82,6 @@ describe("should automate the websites", function () {
 
     it("test keypressesTab", () => {
       const homePage = new HomePage();
-      homePage.visitPage();
       homePage.clickKeypressesTab();
 
       const keypressesPage = new KeypressesPage();
@@ -96,7 +90,6 @@ describe("should automate the websites", function () {
     });
   it("test dragAndDropTab", () => {
     const homePage = new HomePage();
-    homePage.visitPage();
     homePage.clickDraganddropTab();
 
     const dragAndDropPage = new DragAndDrobPage();
@@ -106,7 +99,6 @@ describe("should automate the websites", function () {
 
   it("test addRemoveTab", () => {
     const homePage = new HomePage();
-    homePage.visitPage();
     homePage.clickAddremoveelementsTab();
 
     const addRemovePage = new AddRemovePage();
@@ -117,7 +109,6 @@ describe("should automate the websites", function () {
 
   it("test statusCodesTab", () => {
     const homePage = new HomePage();
-    homePage.visitPage();
     homePage.clickStatuscodesTab();
 
     const statusCodesPage = new StatusCodesPage();
@@ -127,7 +118,6 @@ describe("should automate the websites", function () {
 
   it("test iFrameTab", () => {
     const homePage = new HomePage();
-    homePage.visitPage();
     homePage.clickIframeTab();
 
     const iFramePage = new IFramePage();
