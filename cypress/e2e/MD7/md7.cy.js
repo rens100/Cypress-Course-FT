@@ -20,74 +20,74 @@ describe("should automate the websites", function () {
     homePage.visitPage();
   });
 
-    it("test checkboxTab", () => {
-      const homePage = new HomePage();
-      homePage.clickCheckboxTab();
+  it("test checkboxTab", () => {
+    const homePage = new HomePage();
+    homePage.clickCheckboxTab();
 
-      const checkboxPage = new CheckboxPage();
-      checkboxPage.checkFirstCheckbox();
-      checkboxPage.checkSecondCheckbox();
-    });
+    const checkboxPage = new CheckboxPage();
+    checkboxPage.checkFirstCheckbox();
+    checkboxPage.checkSecondCheckbox();
+  });
 
-    it("test datepickerTab", () => {
-      const homePage = new HomePage();
-      homePage.clickDatepickerTab();
+  it("test datepickerTab", () => {
+    const homePage = new HomePage();
+    homePage.clickDatepickerTab();
 
-      const datePickerPage = new DatePickerPage();
-      datePickerPage.setRandomDate();
-    });
+    const datePickerPage = new DatePickerPage();
+    datePickerPage.setRandomDate();
+  });
 
-    it("test inputTab", () => {
-      const homePage = new HomePage();
-      homePage.clickInputsTab();
+  it("test inputTab", () => {
+    const homePage = new HomePage();
+    homePage.clickInputsTab();
 
-      const inputPage = new InputPage();
-      inputPage.typeNumberIntoField();
-      inputPage.typeLetterIntoField();
-    });
+    const inputPage = new InputPage();
+    inputPage.typeNumberIntoField();
+    inputPage.typeLetterIntoField();
+  });
 
-    it("test hoversTab", () => {
-      const homePage = new HomePage();
-      homePage.clickHoversTab();
+  it("test hoversTab", () => {
+    const homePage = new HomePage();
+    homePage.clickHoversTab();
 
-      const hoversPage = new HoversPage();
-      hoversPage.hoversFirstFigure();
-    });
+    const hoversPage = new HoversPage();
+    hoversPage.hoversFirstFigure();
+  });
 
-    it("test basisAuthTab", () => {
-      const homePage = new HomePage();
-      homePage.clickBasicauthTab();
+  it("test basisAuthTab", () => {
+    const homePage = new HomePage();
+    homePage.clickBasicauthTab();
 
-      const basisauthPage = new BasisauthPage();
-      basisauthPage.checkNegativeCase();
-      basisauthPage.checkPositiveCase();
-    });
+    const basisauthPage = new BasisauthPage();
+    basisauthPage.checkNegativeCase();
+    basisauthPage.checkPositiveCase();
+  });
 
-    it("test formTab", () => {
-      const homePage = new HomePage();
-      homePage.clickFormTab();
+  it("test formTab", () => {
+    const homePage = new HomePage();
+    homePage.clickFormTab();
 
-      const formPage = new FormPage();
-      formPage.fillFieldsWithValidData();
-      formPage.doNotFillAllFields();
-    });
+    const formPage = new FormPage();
+    formPage.fillFieldsWithValidData();
+    formPage.doNotFillAllFields();
+  });
 
-    it("test dropDownTab", () => {
-      const homePage = new HomePage();
-      homePage.clickDropdownListTab();
+  it("test dropDownTab", () => {
+    const homePage = new HomePage();
+    homePage.clickDropdownListTab();
 
-      const dropdownListPage = new DropdownListPage();
-      dropdownListPage.selectOption();
-    });
+    const dropdownListPage = new DropdownListPage();
+    dropdownListPage.selectOption();
+  });
 
-    it("test keypressesTab", () => {
-      const homePage = new HomePage();
-      homePage.clickKeypressesTab();
+  it("test keypressesTab", () => {
+    const homePage = new HomePage();
+    homePage.clickKeypressesTab();
 
-      const keypressesPage = new KeypressesPage();
-      keypressesPage.checkPressButton();
-      keypressesPage.checkRandomButton();
-    });
+    const keypressesPage = new KeypressesPage();
+    keypressesPage.checkPressButton();
+    keypressesPage.checkRandomButton();
+  });
   it("test dragAndDropTab", () => {
     const homePage = new HomePage();
     homePage.clickDraganddropTab();
@@ -104,7 +104,6 @@ describe("should automate the websites", function () {
     const addRemovePage = new AddRemovePage();
     addRemovePage.addElementAndDelete();
     addRemovePage.addMoreElementsAndDeleteThem();
-
   });
 
   it("test statusCodesTab", () => {
